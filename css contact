@@ -1,0 +1,114 @@
+
+#Backgrnd{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.c8Uohu6n0NMQOz-vcuJTgQHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=427f16c4cd4f623da524c87a4626e5449371ad0392bc1aa8988e52fbb9a0ee96);
+    object-fit: cover;
+    background-size: cover;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    background-size: cove;
+    background-position: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    padding-top: 20px;
+    border: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 2px;
+    background-color: rgb(24, 34, 45);
+}
+
+#More{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(24, 34, 45);
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+#Mid_row{
+    background-color: rgb(24, 34, 45);
+    border: solid;
+    border-radius: 20px;
+    padding: 40px;
+    margin-left: 30%;
+    margin-top: 40px;
+    margin-right: 35%;
+}
+
+#Button1{
+    color: white;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+#Filter_area{
+    background-color: rgb(24, 34, 45);
+    border: solid;
+    border-radius: 20px;
+    padding: 34px;
+    margin-left: 70%;
+    margin-top: -159px;
+}
+
+#Filter{
+    background-color: rgb(24, 34, 45);
+}
+
+#Code{
+    font-family: Arial;
+}
+
+
+p, h1
+
+{
+
+    color: white;
+    
+}
+
+
+
+#ContactUs {
+
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+#contactlist
+
+{
+
+font-family: Arial, Helvetica, sans-serif
+
+}
+
+
+#Questions
+
+{
+
+    width: 550px;
+    height: 200px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#button
+
+{
+
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    font-size: 22px;
+
+}
+
