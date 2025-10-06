@@ -1,18 +1,9 @@
-#Banner{
-    background-color: rgb(24, 34, 45);
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
-    border: solid;
-    border-bottom: 0px;
-    padding-top: 50px;
-    padding-bottom: 150px;
-}
-
 #Backgrnd{
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: lightseagreen;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.c8Uohu6n0NMQOz-vcuJTgQHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=427f16c4cd4f623da524c87a4626e5449371ad0392bc1aa8988e52fbb9a0ee96);
+    object-fit: cover;
+    background-size: cover;
 }
 
 #main{
@@ -22,7 +13,8 @@
     background-position: center;
     margin-left: -8px;
     margin-right: -8px;
-    margin-top: -25px;
+    margin-top: -8px;
+    padding-top: 20px;
     border: solid;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -46,7 +38,8 @@
     border-radius: 20px;
     padding: 40px;
     margin-left: 30%;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-right: 35%;
 }
 
 #Button1{
