@@ -295,3 +295,75 @@ body {
     font-size: 1rem;
   }
 }
+
+/* Cards / Boxes for Trips page */
+#Trips-Section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns on wide screens */
+  gap: 24px;
+  align-items: start;
+  padding: 0 1rem;
+}
+
+#Trips-Section > div {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+  border: 1px solid rgba(100,255,218,0.06);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+/* Title inside each card */
+#Trips-Section > div h1 {
+  color: #64ffda;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Card body text */
+#Trips-Section > div p {
+  color: #e6f1ff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+/* Lists inside cards */
+#Trips-Section > div ul {
+  margin: 8px 0 0 1.1rem;
+  color: #dffcf6;
+  line-height: 1.6;
+}
+
+#Trips-Section > div li {
+  margin: 6px 0;
+}
+
+/* Make the page title above the cards consistent */
+#Title h1 {
+  color: #fff;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+/* Responsive: stack cards and increase spacing on small screens */
+@media (max-width: 820px) {
+  #Trips-Section {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 94%;
+  }
+
+  #Trips-Section > div {
+    padding: 18px;
+  }
+
+  #Trips-Section > div h1 {
+    font-size: 1.25rem;
+  }
+}
