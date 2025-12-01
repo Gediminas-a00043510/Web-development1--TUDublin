@@ -17,7 +17,7 @@ Meaning: Web Dev Project - Contact Page
   <div class="More-content">
     <a href="index.html">Home</a>
     <a href="contact.html" class="active">Contact</a>
-    <a href="About.html">About</a>
+    <a href="about.html">About</a>
     <a href="Trips.html" class="active">Trips</a>
   </div>
 
@@ -25,23 +25,33 @@ Meaning: Web Dev Project - Contact Page
     <h1>Snow Dreams</h1>
   </div>
 
-  <div id="Contact-Row">
-    <div id="ContactUs">
-      <h1>Contact Us</h1>
-    </div>
+<div class="contact-flex">
 
-    <div id="contactlist">
+    <div id="contactlist" class="contact-box">
       <p>📞 Phone number: <strong>+353 87 123 4567</strong></p>
       <p>📧 Email: <strong>info@snowdreams.ie</strong></p>
       <p>💬 Customer Services</p>
 
       <textarea id="Questions" placeholder="Ask our online support..."></textarea>
-      <button id="button" onclick="sendMessage()">Send</button>
+      <button id="button" onclick="validateQuestion()">Send Question</button>
 
-      <p id="message"></p>
+      <p id="question-message"></p>
     </div>
-  </div>
 
+    <div id="userlist" class="contact-box">
+      <p>Name: <input id="nameInput" type="text"></p>
+      <p>Email: <input id="emailInput" type="text"></p>
+      <p>Phone number: <input id="phoneInput" type="text"></p>
+
+      <button id="userButton" onclick="validateUserInfo()">Check User Info</button>
+
+      <p id="user-message"></p>
+    </div>
+
+</div>
+
+
+</div>
   <script>
     function sendMessage() {
       document.getElementById("Questions").value = "";
@@ -51,7 +61,48 @@ Meaning: Web Dev Project - Contact Page
   </script>
 </body>
 </html>
+<script>
+  function validateUserInfo() {
+    let name = document.getElementById("nameInput").value.trim();
+    let email = document.getElementById("emailInput").value.trim();
+    let phone = document.getElementById("phoneInput").value.trim();
 
+    let userMsg = document.getElementById("user-message");
 
+    let nameValid = /^[A-Za-z\s]+$/.test(name);
+    let emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    let phoneValid = /^[0-9]{7,15}$/.test(phone);
 
+    if (!nameValid) {
+      userMsg.innerHTML = "Invalid name — letters only.";
+      return;
+    }
+
+    if (!emailValid) {
+      userMsg.innerHTML = "Invalid email format.";
+      return;
+    }
+
+    if (!phoneValid) {
+      userMsg.innerHTML = "Invalid phone number (numbers only).";
+      return;
+    }
+
+    userMsg.innerHTML = "User information is valid!";
+  }
+
+  function validateQuestion() {
+    let question = document.getElementById("Questions").value.trim();
+    let questionMsg = document.getElementById("question-message");
+
+    if (question.length < 3) {
+      questionMsg.innerHTML = "Please enter a valid question.";
+      return;
+    }
+
+    document.getElementById("Questions").value = "";
+    questionMsg.innerHTML = "Question sent successfully!";
+  }
+
+</script>
 
