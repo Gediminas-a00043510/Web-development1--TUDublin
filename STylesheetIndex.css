@@ -195,10 +195,15 @@ body {
   border-radius: 10px;
   border: none;
   outline: none;
-  padding: 10px;
+  padding: 1px;
   margin-top: 10px;
   resize: none;
   font-size: 1rem;
+}
+
+#userlist{
+  position: static;
+  padding-left: 40%;
 }
 
 #button {
@@ -366,4 +371,55 @@ body {
   #Trips-Section > div h1 {
     font-size: 1.25rem;
   }
+}
+
+.contact-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* mobile responsive */
+}
+
+.contact-box,
+#userlist {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  color: #e6f1ff;
+  font-size: 1.1rem;
+}
+
+/* Inputs inside userlist */
+#userlist input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .contact-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#userButton{
+  background-color: #64ffda;
+  color: #0a192f;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 15px;
+  transition: 0.3s;
 }
